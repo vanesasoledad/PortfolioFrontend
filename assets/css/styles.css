@@ -1,0 +1,27 @@
+body{
+    background: hsl(0, 70%, 45%);
+    background: linear-gradient(135deg, rgb(195, 34, 34) 23%, rgba(253,247,45,1) 100%);
+    color: rgb(8, 8, 8);
+}
+#redes{
+    text-align: center;
+    margin: auto;
+}
+li {
+    list-style-type: none;
+    margin-left: -2.5% ;;
+    
+}
+.imgperfil{
+    border-radius: 100px;
+}
+.nombreperfil{
+    font-size: 3em;
+}
+#login{
+    text-align: right;
+}
+.banner{
+    justify-content: end;
+    display: flex;
+}
