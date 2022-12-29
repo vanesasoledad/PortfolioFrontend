@@ -4,65 +4,145 @@
     <meta charset="UTF-8">
     <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Vanesa Torre</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/282753b14d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/css/styles.css">
+    <title>Portfolio</title>
   </head>
   <body>
-    <form id="login" method="POST" onsubmit="">
-      <label for="usuario ">Usuario</label>
-      <input type="text " id="usuario" nombre="usuario" autocomplete="off">
+  <!-- seccion de navbar -->
+    <section id="navbar">  
+      <nav class="navbar navbar-expand-lg bg-red">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+            <img class="imgLogo" src="assets/img/logoAp.png" alt="argentina programa">
+          </a>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item"> <a href= "https://www.linkedin.com/in/vanesa-torre-20a803237/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x "></i></a></li>
+              <li class="list-group-item"> <a href="https://github.com/vanesasoledad" target="_blank"><i class="fa-brands fa-github fa-2x "></i></a></li>
+              
+              <!-- Button trigger modal -->
+              <!-- boton que abre el login  -->
+               <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#LoginModal">
+               Iniciar Sesión 
+              </button>
+            </ul>
 
-      <label for="contraseña ">Contraseña</label>
-      <input type="contraseña " id="contraseña " nombre="contraseña" autocomplete="off">
-     </form>    
-    
-    <Section id="redes">
-      <!-- mis redes sociales -->
-      <h2>Redes</h2>
-      <ul>
-        <li><a href="https://github.com/vanesasoledad" target="_blank">github</a></li>
-        <li><a href="https://www.linkedin.com/in/vanesa-torre-20a803237/" target="_blank">linkedin</a></li>
-      </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- seccion del banner -->
+      <section class = banner>
+        
+       
+          <h1 class="text-white text-center intro">Vanesa Soledad Torre 
+          </h1>
+          <h2 class="text-white text-center intro">
+            Developer Full Stack Junior </h2>
+        </section>
 
-    </Section>
-    <!-- sección sobre mi -->
+      </section>
+
+  
+    <!-- Foto-->
     <section>
-      <h1>Acerca mi </h1>
       <div class="banner">
-        <img class="imgperfil" src="assets/img/20180318_150120.png" alt="imagen-de-Vanesa">
+        <img class="imgperfil" src="assets/img/foto mia.png" alt="imagen-de-Vanesa">
       </div>
+    </section>
+    
+      <!--presentacion  -->
+      <section class = "Presentacion text-center">
+        <h1>Acerca de Mi</h1>
+        <h2>Soy cocinera y pastelera profecional con estudios realizados en el instituto de gastronomia "cecal" de la ciudad de rosario.</h2>
+        <h2>Trabajo de forma privada en un supermercado.</h2>
+        <h2>Soy una persona curiosa, que me lleva a tomar nuevos desafios, estudie gestor de redes sociales en la UNR Universidad Nacional De Rosario.</h2>
+        <h2>Hoy me encuentro estudiando y realizando pequeños proyectos en desarrollo web.</h2>
+      </section> 
+<br>
 
-      <div>
-        <h1 class="nombreperfil">Vanesa Soledad Torre </h1>
-        <h3>Developer Full Stack Junior, Cocinera profecional </h3>
+      <!-- Estudios -->
+      <section class = "estudios text-center">
+        <h1>Educacion</h1>
+        <h2>Secundario Completo - Inst. Secundario Wheelwright - año 2005</h2>
+        <h2>Reparacion de Pc - 2008</h2>
+        <h2>Cocina y Pasteleria Prof. - Inst Cecal Rosario - 2017</h2>
+        <h2>Gestor Redes Sociales - Universidad Nacional de Rosario - 2022</h2>
+       
+      </section>
+<br>
+<!-- experiencia laboral -->
+      <section class = "experiencia text-center">
+        <h1>Experiencia</h1>
+        <h2>Jefe de cocina - La Campiña - 2014 - hasta la actualidad.</h2>
+        <h2>Call center - telemarketer - 2006</h2>
+      </section>
+
+
+      <!-- habilidades -->
+    
+      <section>
+        <h1 style="text-align: center; color: black,">Skills Bar</h1>
+  <div class="skill-group">
+  <p>HTML, CSS and Web Design</p>
+  <div class="skill-bar">
+    <div class="skill-value html">90%</div>
+  </div>
+    <p>Javascript</p>
+  <div class="skill-bar">
+    <div class="skill-value js">70%</div>
+  </div>
+    <p>Css</p>
+  <div class="skill-bar">
+    <div class="skill-value css">80%</div>
+  </div>
+</div>
+</section>
+
+<!-- Proyectos  -->
+
+<section class="proyectos text-center mt-5">
+  <h1>Proyectos</h1>
+</section>
+ 
+
+<!-- modales -->
+
+<!-- El Login -->
+
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-    
-    </section>
-<!-- Mi experencia laboral -->
-    <section id="experiencia">
-      <h1>Experiencia Laboral</h1>
-      <h3>La campiña</h3>
-      <p>Jefe de Cocina - 2014 - hasta la actualidad</p>
-      <h3>Call Center</h3>
-      <p>Telemarketer - 2015/2016</p>
-    </section>
+      <div class="modal-body">
+        
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+           
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
 
-    <section>
-      <h1>Educación</h1>
-      <h3>Instituto Secundario Wheelwright</h3>
-      <p>Secundario Completo - 2005</p>
-      <h3>cursos completos</h3>
-      <p>Cocina y Pasteleria -2016- Cecal</p>
-      <p>Gestor de Redes Sociales - UNR - 2022 </p>
-      <p>Argentina Programa - 2023</p>
-    
-      
-    </section>
 
-    <section>
-      <h1>Proyectos</h1>
-      <h3>desarrollo de mi portfolio web utilizando HTML, JS, CSS,</h3>
-    </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
 
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
